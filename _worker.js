@@ -5,8 +5,14 @@ let mytoken= ['auto'];//快速订阅访问入口, 留空则不启动快速订阅
 
 // 设置优选地址，不带端口号默认443，TLS订阅生成
 let addresses = [
-	'icook.tw:2053#官方优选域名',
-	'cloudflare.cfgo.cc#优选官方线路',
+	'yxip.fjj1218.eu.org:443#自建域名软路由优选-fjj提供',
+	'sp.rweek.top:443#优选官方域名',
+	'hk.rweek.top:2052#优选香港域名',
+	'cloudflare.cfgo.cc:443#优选官方线路',
+	'icook.tw:2053#优选域名',
+	'skk.moe:443#官方优选',
+	'skk.moe:443#官方优选',
+	'cf.090227.xyz:443#官方优选-CM提供',
 ];
 
 // 设置优选地址api接口
@@ -17,24 +23,79 @@ let addressesapi = [
 
 // 设置优选地址，不带端口号默认80，noTLS订阅生成
 let addressesnotls = [
-	'www.visa.com.sg#官方优选域名',
-	'www.wto.org:8080#官方优选域名',
-	'www.who.int:8880#官方优选域名',
+	        'www.visa.com.sg#官方优选域名',
+	        'www.wto.org:8080#官方优选域名',
+	        'www.who.int:8880#官方优选域名',
+	        'time.cloudflare.com:80#官方优选域名',
+                'shopify.com:80#官方优选域名',
+                'time.is:80#官方优选域名',
+                'icook.hk:80#官方优选域名',
+                'icook.tw:80#官方优选域名',
+                'ip.sb:80#官方优选域名',
+                'japan.com:80#官方优选域名',
+                'malaysia.com:80#官方优选域名',
+                'russia.com:80#官方优选域名',
+                'singapore.com:80#官方优选域名',
+                'skk.moe:80#官方优选域名',
+                'www.visa.com:80#官方优选域名',
+                 'www.visa.com.sg:80#官方优选域名',
+                'www.visa.com.hk:80#官方优选域名',
+                'www.visa.com.tw:80#官方优选域名',
+                'www.visa.co.jp:80#官方优选域名',
+                'www.visakorea.com:80#官方优选域名',
+                'www.gco.gov.qa:80#官方优选域名',
+                'www.gov.se:80#官方优选域名',
+                'www.gov.ua:80#官方优选域名',
+                'www.digitalocean.com:80#官方优选域名',
+                'www.csgo.com:80#官方优选域名',
+                'www.shopify.com:80#官方优选域名',
+                'www.whoer.net:80#官方优选域名',
+                'www.whatismyip.com:80#官方优选域名',
+                'www.ipget.net:80#官方优选域名',
+                'www.hugedomains.com:80#官方优选域名',
+                'www.udacity.com:80#官方优选域名',
+                'www.4chan.org:80#官方优选域名',
+                'www.okcupid.com:80#官方优选域名',
+                'www.glassdoor.com:80#官方优选域名',
+                'www.udemy.com:80#官方优选域名',
+                'www.baipiao.eu.org:80#官方优选域名',
+                'cdn.anycast.eu.org:80#官方优选域名',
+                'cdn-all.xn--b6gac.eu.org:80#官方优选域名',
+                'cdn-b100.xn--b6gac.eu.org:80#官方优选域名',
+                'xn--b6gac.eu.org:80#官方优选域名',
+               'edgetunnel.anycast.eu.org:80#官方优选域名',
+               'alejandracaiccedo.com:80#官方优选域名',
+               'nc.gocada.co:80#官方优选域名',
+               'log.bpminecraft.com:80#官方优选域名',
+               'www.boba88slot.com:80#官方优选域名',
+               'gur.gov.ua:80#官方优选域名',
+               'www.zsu.gov.ua:80#官方优选域名',
+               'www.iakeys.com:80#官方优选域名',
+               'edtunnel-dgp.pages.dev:80#官方优选域名',
+               'www.d-555.com:80#官方优选域名',
+               'fbi.gov:80#官方优选域名',
+               'www.visa.com.sg:80#官方优选域名',
 ];
 
 // 设置优选noTLS地址api接口
 let addressesnotlsapi = [
 	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt', //可参考内容格式 自行搭建。
+	'https://raw.githubusercontent.com/cmliu/CFcdnVmess2sub/main/addressesapi.txt',
+        'https://raw.githubusercontent.com/ymyuuu/IPDB/main/bestcf.txt',
+	'https://raw.githubusercontent.com/ymyuuu/IPDB/main/bestproxy.txt',
+	'https://addressesapi.090227.xyz/CloudFlareYes', //可参考内容格式 自行搭建
+	'https://addressesapi.090227.xyz/ct',
+	'https://addressesapi.090227.xyz/cmcc',
 ];
 
-let DLS = 8;//速度下限
+let DLS = 10;//速度下限
 let addressescsv = [
 	//'https://raw.githubusercontent.com/cmliu/WorkerVless2sub/main/addressescsv.csv', //iptest测速结果文件。
 ];
 
-let subconverter = "apiurl.v1.mk"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
+let subconverter = "sub.fjj1218.eu.org"; //在线订阅转换后端，目前使用肥羊的订阅转换功能。支持自建psub 可自行搭建https://github.com/bulianglin/psub
 let subconfig = "https://raw.githubusercontent.com/cmliu/ACL4SSR/main/Clash/config/ACL4SSR_Online_Full_MultiMode.ini"; //订阅转换配置文件
-let noTLS = false; //改为 true , 将不做域名判断 始终返回noTLS节点
+let noTLS = false; //改为 false 做域名判断,改为 true , 将不做域名判断 始终返回noTLS节点
 let link = '';
 let edgetunnel = 'ed';
 let RproxyIP = 'false';
